@@ -11,6 +11,11 @@ class Sous_Secteur
     /** @Column(type="string") */
     private $title;
    
+    /**
+     * @OneToMany(targetEntity="Annonce", mappedBy="departement")
+     */
+    private $annonce;
+    
     public function getId() {
         return $this->id;
     }

@@ -21,10 +21,19 @@ class Annonce
     private $validated;  
     
     /**
-     * 
      * @ManyToOne(targetEntity="User", inversedBy="annonce")
      */
     private $user;
+    
+    /**
+     * @ManyToOne(targetEntity="Departement", inversedBy="annonce")
+     */
+    private $departement;
+    
+    /**
+     * @ManyToOne(targetEntity="Sous_Secteur", inversedBy="annonce")
+     */
+    private $sous_secteur;
     
     public function getId() {
         return $this->id;
