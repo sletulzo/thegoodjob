@@ -4,7 +4,6 @@ include("loader.php");
 include("lib/autoload.php");
 include("lib/std/baseController.php");
 include("model/User.php");
-include("model/Level.php");
 
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
@@ -20,9 +19,9 @@ $isDevMode = false;
 // the connection configuration
 $dbParams = array(
     'driver'   => 'pdo_mysql',
-    'user'     => '',
-    'password' => '',
-    'dbname'   => '',
+    'user'     => 'testgoodjob',
+    'password' => 'test',
+    'dbname'   => 'goodjobtest',
 );
 
   // load the entities

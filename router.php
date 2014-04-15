@@ -11,7 +11,7 @@ class Router
     {
         $this->arg = array();
         $this->url = explode('/', $_SERVER['REQUEST_URI']);
-        if(isset($this->url[1]))
+        if($this->url[1] != "")
             $this->controller_name = $this->url[1];
         else
             $this->controller_name = "Home";
