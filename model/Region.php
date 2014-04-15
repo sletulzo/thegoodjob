@@ -5,7 +5,7 @@ namespace Model;
 /** @Entity */
 class Region
 {
-    /** @Id @Column(type="integer") @GeneratedValue */
+    /** @Id @Column(type="string") @GeneratedValue */
     private $id;
     
     /** @Column(type="string") */
