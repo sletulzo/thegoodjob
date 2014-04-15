@@ -20,6 +20,12 @@ class Annonce
     /** @Column(type="boolean") */
     private $validated;  
     
+    /**
+     * 
+     * @ManyToOne(targetEntity="User", inversedBy="annonce")
+     */
+    private $user;
+    
     public function getId() {
         return $this->id;
     }

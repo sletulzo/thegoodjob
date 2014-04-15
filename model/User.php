@@ -26,6 +26,11 @@ class Type_Annonce
     /** @Column(type="boolean") */
     private $activated;
     
+    /**
+     * @OneToMany(targetEntity="Annonce", mappedBy="user")
+     */
+    private $annonce;
+    
     public function getId() {
         return $this->id;
     }
