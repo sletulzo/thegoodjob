@@ -3,7 +3,7 @@ use Doctrine\ORM\Mapping\Entity as Entity;
 
 namespace Model;
 /** @Entity */
-class Type_Annonce
+class User
 {
     /** @Id @Column(type="integer") @GeneratedValue */
     private $id;
