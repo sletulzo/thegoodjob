@@ -1,12 +1,12 @@
 <?php
 
-class Home_controller extends BaseController
+class Test_controller extends BaseController
 {
     
     public function indexAction()
     {
         parent::$tpl->assign("title","hello");
-        parent::$tpl->draw("index");
+        parent::$tpl->draw("test_index");
     }
     
     public function testAction()
