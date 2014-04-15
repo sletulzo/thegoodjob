@@ -26,6 +26,11 @@ class Annonce
     private $user;
     
     /**
+     * @ManyToOne(targetEntity="Region", inversedBy="annonce")
+     */
+    private $region;
+    
+    /**
      * @ManyToOne(targetEntity="Departement", inversedBy="annonce")
      */
     private $departement;
@@ -34,6 +39,11 @@ class Annonce
      * @ManyToOne(targetEntity="Sous_Secteur", inversedBy="annonce")
      */
     private $sous_secteur;
+    
+    /**
+     * @ManyToOne(targetEntity="Type_Conrat")
+     */
+    private $type_contrat;
     
     public function getId() {
         return $this->id;

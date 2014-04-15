@@ -11,6 +11,11 @@ class Region
     /** @Column(type="string") */
     private $name;
    
+    /**
+     * @OneToMany(targetEntity="Annonce", mappedBy="departement")
+     */
+    private $annonce;
+    
     public function getId() {
         return $this->id;
     }
