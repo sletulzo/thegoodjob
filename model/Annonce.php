@@ -45,6 +45,11 @@ class Annonce
      */
     private $type_contrat;
     
+    /**
+     * @ManyToOne(targetEntity="Type_Annonce")
+     */
+    private $type_annonce;
+    
     public function getId() {
         return $this->id;
     }

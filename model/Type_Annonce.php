@@ -11,6 +11,11 @@ class Type_Annonce
     /** @Column(type="string") */
     private $title;
    
+    /**
+     * @ManyToOne(targetEntity="Type_Conrat")
+     */
+    private $type_contrat;
+    
     public function getId() {
         return $this->id;
     }
