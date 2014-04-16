@@ -1,6 +1,6 @@
 <?php
 
-class Home_controller extends BaseController
+class Annonces_controller extends BaseController
 {
     
     public function indexAction()
